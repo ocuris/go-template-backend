@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to {{.Name}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #f1b700;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #f1b700;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        /* Styling for unsubscribe link */
+        .unsubscribe-link {
+            display: inline-block;
+            background-color: #f1b700;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <h1>Welcome to {{.Name}}!</h1>
+                <p>Hi {{.Name}},</p>
+                <p>Thank you for subscribing to our {{.Name}} newsletter! We’re thrilled to have you as part of our
+                    community. You will now receive the latest updates, insights, and exclusive content directly to your
+                    inbox.</p>
+
+                <p>Stay tuned for more exciting news and features! We look forward to helping you explore the world of
+                    AI workflows, new product features, and more.</p>
+
+                <p>If you have any questions, feel free to <a href="mailto:support@curis.com">contact us</a> anytime.
+                </p>
+
+                <p>To get started, click the button below:</p>
+
+                <p><a href="[Link to Dashboard]" class="button">Explore Now</a></p>
+
+                <footer>
+                    <p>&copy; 2025 {{.Name}} Inc. All rights reserved.</p>
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/curis"><img src="https://img.icons8.com/ios/452/facebook.png"
+                                alt="Facebook"></a>
+                        <a href="https://twitter.com/curis"><img src="https://img.icons8.com/ios/452/twitter.png"
+                                alt="Twitter"></a>
+                        <a href="https://linkedin.com/company/ocuris"><img
+                                src="https://img.icons8.com/ios/452/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                    <!-- Unsubscribe Link -->
+                    <p>
+                        <a href="http://127.0.0.1:11001/api/v1/unsubscribe?email={{.Email}}"
+                            class="unsubsribe-link">Unsubscribe</a> |
+                        <a href="[Privacy Policy Link]">Privacy Policy</a>
+                    </p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

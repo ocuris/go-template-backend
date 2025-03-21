@@ -1,0 +1,12 @@
+APP_PORT: 11001
+
+DB:
+  HOST: localhost
+  PORT: 5432
+  NAME: workflow_engine_local
+  USER: root
+  PASSWORD: root
+  MAX_IDLE_CONNS: 8
+  MAX_OPEN_CONNS: 16
+  MAX_LIFETIME_CONNS: 10
+  SSL_MODE: disable

@@ -1,0 +1,13 @@
+
+.vscode/
+
+/vendor/
+# *.mod
+# *.sum
+
+
+cmd/app/*
+!cmd/app/main.go
+/configs/*
+!configs/app.configs.sample.yml
+
